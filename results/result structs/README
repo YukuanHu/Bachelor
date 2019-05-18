@@ -1,0 +1,8 @@
+result structs:
+every one contains 6 elements: k, t, f, E, X, Z
+k: iteration numbers
+t: CPU time (s)
+f: objective value
+E: KKT violation
+X: X matrix
+Z: Z matrix
