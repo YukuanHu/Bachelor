@@ -2,3 +2,6 @@ convergence curve
 n=3 alpha=0.1
 n=4 alpha=0.2
 n=5 alpha=0.8
+primalres: primal residual
+dualres: dual residual
+obj: objective value
