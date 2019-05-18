@@ -50,5 +50,6 @@ In this folder, we incorporate MATLAB codes for generating random new problems, 
     - [1e2,1e3,1e4,1e5], for n=3,4,5;
     - [1e3,1e4,1e5],     for n=20;
     - [1e4,1e5],         for n=30.
+5. test_specialR: to test for special designed problem with an optimal objective value 0.
 5. SQP: numerical experiments for comparison between ADMM and existing SQP for nonconvex quadratic programming, by built-in function fmincon().
 6. Draw: to picture the matrices obtained from experiments, by built-in function imagesc().
