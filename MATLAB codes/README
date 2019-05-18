@@ -1,0 +1,54 @@
+Problem Description:
+min  <X,R>+<Y,R>+<Y,XR>
+s.t. Xe=X^Te=Ye=Y^Te=rho,
+     tr(X)=tr(Y)=0, 
+     X,Y>=0.
+
+Assumption: Every critical point (X,Y) satisfies X=Y
+
+Problem Reformulation:
+min  2<X,R>+<X,XR>
+s.t. Xe=X^Te=rho, tr(X)=0, X>=0.
+
+Introduce Splitting Variable Z:
+min  2<X,R>+<Z,XR>
+s.t. Xe=rho, tr(X)=0,
+     Z^Te=rho, Z>=0,
+     X=Z.
+     
+Biconvex, Bilinear, Nonconvex
+
+--> ADMM (two-block)
+min  2<X,R>+<Z,XR>-<Phi,X-Z>+beta/2*norm(X-Z,'fro')^2
+s.t. Xe=rho, tr(X)=0, 
+     Z^Te=rho, Z>=0.
+
+X subproblem:
+min  2<X,R>+<Z,XR>-<Phi,X-Z>+beta/2*norm(X-Z,'fro')^2
+s.t. Xe=rho, tr(X)=0.
+
+We obtain X^+.
+
+Z subproblem:
+min  <Z,X^+R>-<Phi,X^+-Z>+beta/2*norm(X^+-Z,'fro')^2
+s.t. Z^Te=rho, Z>=0.
+
+We obtain Z^+.
+
+Update Multiplier:
+Phi^+=Phi-beta*(X^+-Z^+).
+
+In this folder, we incorporate MATLAB codes for generating random new problems, ADMM, and numerical experiments. 
+5 .m files in all:
+1. Generate: to randomly generate problems. Note that low-dimensional random problems are always infeasible.
+2. ADMM: main algorithm, including process of solving two blocks. 
+    Default parameters setting: 
+    alpha = 1, beta = 1e3 (for low-dimension)/ 1e4 (for high-dimension), 
+    epsilon = 1e-8 (for low-dimension) / 1e-6 (for high-dimension), p = 0.5.
+3. ADMM_alphatest: numerical experiments for relaxation factor alpha, range from 0.1 to 1.0.
+4. ADMM_betatest: numerical experiments for penalty parameter beta, take value in:
+    - [1e2,1e3,1e4,1e5], for n=3,4,5;
+    - [1e3,1e4,1e5],     for n=20;
+    - [1e4,1e5],         for n=30.
+5. SQP: numerical experiments for comparison between ADMM and existing SQP for nonconvex quadratic programming, by built-in function fmincon().
+6. Draw: to picture the matrices obtained from experiments, by built-in function imagesc().
