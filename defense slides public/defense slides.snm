@@ -1,0 +1,19 @@
+\beamer@slide {original problem element form}{5}
+\beamer@slide {original problem matrix form 1}{7}
+\beamer@slide {original problem matrix form 2}{7}
+\beamer@slide {original problem matrix form}{7}
+\beamer@slide {KKT}{9}
+\beamer@slide {general ADMM problem}{11}
+\beamer@slide {X subproblem}{13}
+\beamer@slide {X multiplier}{13}
+\beamer@slide {pre solve X}{13}
+\beamer@slide {Z subproblem}{14}
+\beamer@slide {Z subproblem equal 2}{15}
+\beamer@slide {multiplier update}{16}
+\beamer@slide {multiplier update relax}{16}
+\beamer@slide {residual}{19}
+\beamer@slide {KKT Violation}{19}
+\beamer@slide {ADMM}{20}
+\beamer@slide {convergence1}{22}
+\beamer@slide {convergence2}{22}
+\beamer@slide {test}{25}

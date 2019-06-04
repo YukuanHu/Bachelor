@@ -1,0 +1,19 @@
+\par\begin{algorithm}[H]
+\floatname{algorithm}{框架}
+\caption{求解问题\eqref{original problem matrix form}的ADMM算法框架}
+\begin{algorithmic}[1]
+\REQUIRE $X^0,Z^0,\Phi^0,\beta^0,k:=0$
+\ENSURE $X^k,Z^k,\Phi^k$
+\WHILE{收敛性测试未满足}
+\STATE{$X^{k+1}=\arg\min\limits_{X:X\one=\rho,\trace(X)=0}\mcL_A(X,Z^k,\Phi^k)$}
+\STATE{$Z^{k+1}=\arg\min\limits_{Z:Z^T\one=\rho,Z\ge0}\mcL_A(X^{k+1},Z,\Phi^k)$}
+\STATE{更新$\Phi^k$得到$\Phi^{k+1}$}
+\STATE{如有需要, 更新$\beta^k$得到$\beta^{k+1}$}
+\IF{满足收敛性测试}
+\STATE{\textbf{stop}}
+\ENDIF
+\STATE{$k:=k+1$}
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+

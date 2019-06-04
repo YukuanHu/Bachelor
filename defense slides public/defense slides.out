@@ -1,0 +1,16 @@
+\BOOKMARK [2][]{Outline0.3}{引言}{}% 1
+\BOOKMARK [3][]{Outline0.3.1.4}{问题背景与陈述}{Outline0.3}% 2
+\BOOKMARK [3][]{Outline0.3.2.6}{研究现状}{Outline0.3}% 3
+\BOOKMARK [3][]{Outline0.3.3.7}{问题简化}{Outline0.3}% 4
+\BOOKMARK [2][]{Outline0.4}{最优性条件}{}% 5
+\BOOKMARK [2][]{Outline0.5}{算法设计}{}% 6
+\BOOKMARK [3][]{Outline0.5.1.11}{Times New RomanADMM算法简介}{Outline0.5}% 7
+\BOOKMARK [3][]{Outline0.5.2.13}{子问题的求解}{Outline0.5}% 8
+\BOOKMARK [3][]{Outline0.5.3.16}{拉格朗日乘子的更新}{Outline0.5}% 9
+\BOOKMARK [3][]{Outline0.5.4.17}{停机准则与Times New RomanKKT违反度}{Outline0.5}% 10
+\BOOKMARK [3][]{Outline0.5.5.20}{完整算法}{Outline0.5}% 11
+\BOOKMARK [2][]{Outline0.6}{收敛性分析}{}% 12
+\BOOKMARK [2][]{Outline0.7}{数值实验}{}% 13
+\BOOKMARK [3][]{Outline0.7.1.25}{测试问题}{Outline0.7}% 14
+\BOOKMARK [3][]{Outline0.7.2.26}{与求解非凸二次规划的算法比较}{Outline0.7}% 15
+\BOOKMARK [2][]{Outline0.8}{总结}{}% 16

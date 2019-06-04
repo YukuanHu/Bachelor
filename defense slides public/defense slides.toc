@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.14pt}
+\beamer@sectionintoc {3}{引言}{3}{0}{1}
+\beamer@subsectionintoc {3}{1}{问题背景与陈述}{4}{0}{1}
+\beamer@subsectionintoc {3}{2}{研究现状}{6}{0}{1}
+\beamer@subsectionintoc {3}{3}{问题简化}{7}{0}{1}
+\beamer@sectionintoc {4}{最优性条件}{8}{0}{2}
+\beamer@sectionintoc {5}{算法设计}{10}{0}{3}
+\beamer@subsectionintoc {5}{1}{\fontspec {Times New Roman}{ADMM}算法简介}{11}{0}{3}
+\beamer@subsectionintoc {5}{2}{子问题的求解}{13}{0}{3}
+\beamer@subsectionintoc {5}{3}{拉格朗日乘子的更新}{16}{0}{3}
+\beamer@subsectionintoc {5}{4}{停机准则与\fontspec {Times New Roman}{KKT}违反度}{17}{0}{3}
+\beamer@subsectionintoc {5}{5}{完整算法}{20}{0}{3}
+\beamer@sectionintoc {6}{收敛性分析}{21}{0}{4}
+\beamer@sectionintoc {7}{数值实验}{23}{0}{5}
+\beamer@subsectionintoc {7}{1}{测试问题}{25}{0}{5}
+\beamer@subsectionintoc {7}{2}{与求解非凸二次规划的算法比较}{26}{0}{5}
+\beamer@sectionintoc {8}{总结}{27}{0}{6}
